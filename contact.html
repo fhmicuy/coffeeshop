@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Shop - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Coffee Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+  <section class="contact">
+  <h2>Contact Us</h2>
+  <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="text" placeholder="Your name" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="081234567890" required pattern="[0-9]{10,15}">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="text" rows="5" placeholder="Your message..." required></textarea>
+
+    <!-- Tombol WA dengan nomor tujuan -->
+    <a 
+      href="https://wa.me/6283808584826?text=Halo!! Terimakasih sudah membeli product kami." 
+      target="_blank"
+      class="whatsapp-button"
+    >
+      Kirim via WhatsApp
+    </a>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Coffee Bliss. All rights reserved. By Pachmi</p>
+  </footer>
+
+</body>
+</html>
